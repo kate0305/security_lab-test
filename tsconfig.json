@@ -1,19 +1,19 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["dom", "dom.iterable", "esnext"],
-
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "module": "ESNext",
     "moduleResolution": "bundler",
-
-    "jsx": "preserve",
-
+    "jsx": "react-jsx",
     "allowJs": true,
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "verbatimModuleSyntax": true,
     "esModuleInterop": true,
-
     "strict": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,
@@ -22,18 +22,34 @@
     "isolatedModules": true,
     "skipLibCheck": true,
     "noEmit": true,
-
     "baseUrl": "src",
     "paths": {
-      "@/*": ["*"],
-      "@app/*": ["app/*"],
-      "@shared/*": ["shared/*"],
-      "@entities/*": ["entities/*"],
-      "@features/*": ["features/*"],
-      "@widgets/*": ["widgets/*"]
-    }
+      "@/*": [
+        "*"
+      ],
+      "@app/*": [
+        "app/*"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ],
+      "@entities/*": [
+        "entities/*"
+      ],
+      "@features/*": [
+        "features/*"
+      ],
+      "@widgets/*": [
+        "widgets/*"
+      ]
+    },
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-
   "include": [
     "next-env.d.ts",
     "**/*.ts",
@@ -41,6 +57,8 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
-
-  "exclude": ["node_modules", "tailwind.config.ts"]
+  "exclude": [
+    "node_modules",
+    "tailwind.config.ts"
+  ]
 }

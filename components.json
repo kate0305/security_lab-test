@@ -18,7 +18,9 @@
     "hooks": "@/shared/hooks",
     "features": "@/features",
     "entities": "@/entities",
-    "widgets": "@/widgets"
+    "widgets": "@/widgets",
+    "components": "@/shared/ui",
+    "utils": "@/shared/lib"
   },
   "registries": {}
 }

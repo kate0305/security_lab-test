@@ -9,7 +9,7 @@
     "lint:script": "eslint .",
     "format": "prettier --write .",
     "lint:style": "stylelint \"**/*.{css,scss}\" --fix",
-    "lint:fix": "npm run lint:script --fix && npm run lint:style && npm run format",
+    "lint:fix": "eslint . --fix && npm run lint:style && npm run format",
     "prepare": "husky"
   },
   "dependencies": {
