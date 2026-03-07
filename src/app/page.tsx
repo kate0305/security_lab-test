@@ -1,5 +1,5 @@
-import { HomePage } from '@/pages/home';
+import { CreateUserPage } from '@/pages/create-user';
 
 export default function Home() {
-  return <HomePage />;
+  return <CreateUserPage />;
 }

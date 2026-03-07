@@ -1,6 +1,6 @@
-import { CreateUserModal } from '@/features/create-user';
+import { CreateUserModal } from './create-user-modal';
 
-export const HomePage = () => (
+export const CreateUserPage = () => (
   <div className="flex basis-full flex-col items-center justify-center gap-8">
     <div className="basis-full">
       <h1 className="scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">
